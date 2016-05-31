@@ -77,4 +77,4 @@ if(!isset($hisSymbol)){
 }
 
 
-echo '{"play":"'.choose_better_cell($message['board'],$message['you'], $hisSymbol,9 - $freeCells).'"}';
+echo '{"play":"'.choose_better_cell($message['board'],$message['you'], $hisSymbol,9 - $freeCells)[0].'"}';
