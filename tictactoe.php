@@ -36,7 +36,7 @@ function score_case($map,$me,$him,$case,$depth=0){
 	return 0;
       }else{
 	$sc=choose_better_cell($newMap,$him,$me,$depth + 1);
-	return -$sc[1];
+	return -$depth + $sc[1];
       }
     }
 }
