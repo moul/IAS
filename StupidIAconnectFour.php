@@ -1,4 +1,7 @@
 <?php
+header('Access-Control-Allow-Origin: *');
+header('Access-Control-Allow-Methods: GET, POST'); 
+
 /*
 * stupid IA for battle ship
 * choose by random a free column
