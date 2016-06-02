@@ -1,6 +1,7 @@
 <?php
 header('Access-Control-Allow-Origin: *');
 header('Access-Control-Allow-Methods: GET, POST'); 
+header('Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept');
 /*
 * Tic Tac Toe gnieark's IA V2
 * Gnieark 2016

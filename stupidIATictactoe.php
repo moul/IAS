@@ -1,6 +1,7 @@
 <?php
 header('Access-Control-Allow-Origin: *');
 header('Access-Control-Allow-Methods: GET, POST'); 
+header('Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept');
 
 $cases=array("0-0","0-1","0-2","1-0","1-1","1-2","2-0","2-1","2-2");
 //remplir l'array
