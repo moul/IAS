@@ -1,4 +1,11 @@
 <?php
+/*
+* Stupid artificial intelligence for tictactoe
+* Bot for https://botsarena.tinad.fr
+* By Gnieark 2016
+* licensed under the Do What the Fuck You Want to Public License http://www.wtfpl.net/
+*/
+
 //headers for permit CORS, 
 //This  permit me to test this bot,  using this web page
 //https://botsarena.tinad.fr/testBotScripts/tictactoe.html
