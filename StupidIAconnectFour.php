@@ -9,15 +9,24 @@ header('Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Ac
 */
 $in=file_get_contents('php://input');
 $params=json_decode($in, TRUE);
-$grid=$params['grid'];
-$colAvailable=array();
+switch($params['action']){
+	case "init":
+		echo "{'name':'Stupid AI'}";
+		break;
+	case "play-turn":
 
-for($i=0;$i<7;$i++){
-  if($grid[5][$i] == ""){
-    $colAvailable[]=$i;
-  }
+		$grid=$params['grid'];
+		$colAvailable=array();
+		//dont play on full colomns
+		for($i=0;$i<7;$i++){
+  			if($grid[5][$i] == ""){
+    				$colAvailable[]=$i;
+  			}
+		}
+		//ia am stupid, just random
+		shuffle($colAvailable);
+		echo '{"play":"'.$colAvailable[0].'"};
+		break;
+	default:
+		break;
 }
-shuffle($colAvailable);
-echo $colAvailable[0];
-die;
-
