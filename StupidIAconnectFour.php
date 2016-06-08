@@ -15,7 +15,7 @@ switch($params['action']){
 		break;
 	case "play-turn":
 
-		$grid=$params['grid'];
+		$grid=$params['board'];
 		$colAvailable=array();
 		//dont play on full colomns
 		for($i=0;$i<7;$i++){
