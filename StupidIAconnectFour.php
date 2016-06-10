@@ -11,7 +11,7 @@ $in=file_get_contents('php://input');
 $params=json_decode($in, TRUE);
 switch($params['action']){
 	case "init":
-		echo "{'name':'Stupid AI'}";
+		echo '{"name":"Stupid AI"}';
 		break;
 	case "play-turn":
 
