@@ -25,7 +25,7 @@ switch($params['action']){
 		}
 		//ia am stupid, just random
 		shuffle($colAvailable);
-		echo '{"play":"'.$colAvailable[0].'"}';
+		echo '{"play":'.$colAvailable[0].'}';
 		break;
 	default:
 		break;
